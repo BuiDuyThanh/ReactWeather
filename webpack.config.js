@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-	entry: [					// input
+	entry: [					// input executed from top to bottom
 		'script!jquery/dist/jquery.min.js',
 		'script!foundation-sites/dist/foundation.min.js',
 		'./app/app.jsx'
