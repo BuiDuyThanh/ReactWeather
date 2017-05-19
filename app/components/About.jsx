@@ -13,8 +13,17 @@ var About = React.createClass({
 var About = (props) => {
 	return (
 		<div>
-			<h3>About</h3>
-			<p>Welcome to about page!</p>
+			<h1 className="text-center">About</h1>
+			<p>This is a weather application build on React.</p>
+			<p>Tools I used:</p>
+			<ul>
+				<li>
+					<a href="https://facebook.github.io/react">React</a> - This is JavaScript framework.
+				</li>
+				<li>
+					<a href="http://openweathermap.org">Open Weather Map</a> - Open Weather Map is used to search for weather data by city name.
+				</li>
+			</ul>
 		</div>
 	)
 };
