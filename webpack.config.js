@@ -19,7 +19,7 @@ module.exports = {
 		path: __dirname,
 		filename: './public/bundle.js'
 	},
-	resolve: {
+	resolve: {			// with resolve we can require file without declare file extension. For example: require('./logger');
 		root: __dirname,
 		alias: {
 			Main: 'app/components/Main.jsx',
@@ -29,7 +29,8 @@ module.exports = {
 			WeatherMessage: 'app/components/WeatherMessage.jsx',
 			About:  'app/components/About.jsx',
 			Examples: 'app/components/Examples.jsx',
-			openWeatherMap: 'app/api/openWeatherMap.jsx'
+			openWeatherMap: 'app/api/openWeatherMap.jsx',
+			ErrorModal: 'app/components/ErrorModal.jsx'
 		},
 		extensions: ['', '.js', '.jsx']	// file extensions
 	},
