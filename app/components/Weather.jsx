@@ -43,11 +43,11 @@ var Weather = React.createClass ({
 
 		if (location && location.length > 0) {
 			this.handleSearch(location);
-			window.location.hash = '#/';	// remove the query of location in URL after search
+			window.location.hash = '#/';	// remove the query of location in URL after search, it redirect to the home page /
 		}
 	},
 
-	componentWillReceiveProps: function (newProps) {
+	componentWillReceiveProps: function (newProps) {	// use this to tell the Weather component to update the change (made by Nav.jsx) in query string so that it receives the new query and update WeatherMessage
 		var location = newProps.location.query.location;
 
 		if (location && location.length > 0) {
